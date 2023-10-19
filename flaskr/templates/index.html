@@ -8,21 +8,27 @@
 <body>
     <h1>python flask app </h1>
     <h2>new</h2>
-
-        <table border="1">
-            <tr>
-                <th>arrival_day</th>
-                <th>title</th>
-                <th>price</th>
-            </tr>
-            {% for book in books %}
-            <tr>
-                <td>{{ book.arrival_day }}</td>
-                <td>{{ book.title }}</td>
-                <td>{{ book.price }}</td>
-            </tr> 
-            {% endfor %}
-
-        </table>
+    {% if books == [] %}
+        <p>wait for new info</p>
+    {% else %}
+        
+    
+    <table border="1">
+        <tr>
+            <th>arrival_day</th>
+            <th>title</th>
+            <th>price</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.arrival_day }}</td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.price }}</td>
+        </tr> 
+        {% endfor %}
+        
+    </table>
+    {% endif %}
+    <a href="{{ url_for('form')}}">edit</a>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>python flask app </h1>
+    <p>new page</p>
+    <form action="{{ url_for('register') }}" method="post">
+        
+        <table border="1">
+            <tr>
+                <th>arrival_day</th>
+                <th>title</th>
+                <th>price</th>
+            </tr> 
+            <tr>
+                <td><input type="text" name="arrival_day" id=""></td>
+                <td><input type="text" name="title" id=""></td>
+                <td><input type="text" name="price" id=""></td>
+                
+            </tr>  
+            
+        </table>
+        <br>
+        <input type="submit" value="ADD">
+    </form>
+
+</body>
+</html>
