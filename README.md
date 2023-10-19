@@ -11,5 +11,5 @@ https://www.youtube.com/watch?v=EQIAzH0HvzQ 【PythonでWebアプリ作成】Fla
 181 cd .. 
 182 python -m flask run 
 
-ここで動いた いたフォルダが悪いかも？
+ここで動いた レイヤーが悪かったかも？
 
